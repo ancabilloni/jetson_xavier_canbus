@@ -1,0 +1,9 @@
+[Unit]
+Description=CanBus service
+After=mod_gpio.service
+
+[Service]
+ExecStart=/home/nvidia/can_tools/can_250kbps.sh
+
+[Install]
+WantedBy=multi-user.target

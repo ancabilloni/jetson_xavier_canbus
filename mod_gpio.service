@@ -1,0 +1,11 @@
+[Unit]
+Description=Switch GPIO Can Pin service
+DefaultDependencies=false
+
+[Service]
+Type=oneshot
+ExecStart=/home/nvidia/can_tools/mod_gpio.sh
+Restart=no
+
+[Install]
+WantedBy=sysinit.target
